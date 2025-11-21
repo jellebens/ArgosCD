@@ -14,9 +14,6 @@ spec:
       parameters:
         - name: crds.enabled
           value: 'true'
-    tool: 
-      helm:
-        releaseName: cert-manager
     chart: cert-manager
   destination:
     server: https://kubernetes.default.svc
