@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: istio
+  namespace: argocd
+spec:
+  project: cluster
+  source:
+    repoURL: https://istio-release.storage.googleapis.com/charts
+    targetRevision: 1.28.0
+    chart: istio/base
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: istio-system
