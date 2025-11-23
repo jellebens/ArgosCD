@@ -5,6 +5,9 @@ metadata:
   namespace: argocd
 spec:
   project: cluster-bootstrap
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
   source:
     repoURL: https://istio-release.storage.googleapis.com/charts
     targetRevision: 1.28.0

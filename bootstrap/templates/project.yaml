@@ -14,8 +14,8 @@ spec:
   - group: '*'
     kind: '*'
   clusterResourceWhitelist:
-    - group: '*'
-      kind: '*''
+  - group: '*'
+    kind: '*'
   destinations:
   - name: in-cluster
     namespace: '*'
