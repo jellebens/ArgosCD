@@ -6,7 +6,7 @@ repos:
   - name: istio
     project: cluster-bootstrap
     type: helm
-    url: https://istio-release.storage.googleapis.com/charts
+    url: https://istio-release.storage.googleapis.com/
   - name: jetstack
     project: cluster-bootstrap
     type: helm
