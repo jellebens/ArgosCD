@@ -3,7 +3,7 @@ kind: Application
 metadata:
   creationTimestamp: "2025-11-23T01:44:50Z"
   name: platform-services
-  namespace: argocd
+  namespace: bootstrap
 spec:
   source:
     path: platform-services
