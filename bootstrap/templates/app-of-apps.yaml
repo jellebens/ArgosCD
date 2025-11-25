@@ -4,7 +4,7 @@ metadata:
   name: platform-services
   namespace: argocd
 spec:
-  sources:
+  source:
     path: platform-services
     repoURL: https://github.com/jellebens/argocd
     targetRevision: HEAD
