@@ -8,9 +8,10 @@ metadata:
     version: "2"
 spec:
   project: cluster-bootstrap
-  repoURL: https://github.com/jellebens/argocd
-  path: argocd
-  targetRevision: HEAD
+  source:
+    path: argocd
+    repoURL: https://github.com/jellebens/argocd
+    targetRevision: HEAD
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
