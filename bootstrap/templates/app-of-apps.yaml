@@ -2,9 +2,8 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   creationTimestamp: "2025-11-23T01:44:50Z"
-  generation: 2
   name: platform-services
-  namespace: argocd
+  namespace: amarok-system
 spec:
   destination:
     namespace: amarok-system
