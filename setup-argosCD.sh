@@ -23,7 +23,7 @@ echo "argocd-server is ready!"
 
 kubectl get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" -n $namespace | base64 -d; echo
 
-helm upgrade --install cluster-bootstrap argocd --create-namespace --namespace argocd
+helm upgrade --install cluster-bootstrap bootstrap/ --create-namespace --namespace $namespace
 
 
 
